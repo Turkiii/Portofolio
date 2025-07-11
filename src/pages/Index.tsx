@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Code, Database, Globe, Cpu, Mail, Linkedin, Github, Terminal, User, Briefcase, GraduationCap, FolderOpen } from 'lucide-react';
 import AnimatedWindow from '../components/AnimatedWindow';
@@ -14,14 +13,14 @@ const Index = () => {
   }, []);
 
   const skills = [
-    { name: 'Java', level: 90 },
-    { name: 'Python', level: 85 },
-    { name: 'JavaScript', level: 80 },
-    { name: 'C++', level: 75 },
-    { name: 'SQL', level: 85 },
-    { name: 'HTML/CSS', level: 90 },
-    { name: 'UI/UX Design', level: 80 },
-    { name: 'Database Design', level: 85 }
+    { name: 'Java' },
+    { name: 'Python' },
+    { name: 'JavaScript' },
+    { name: 'C++' },
+    { name: 'SQL' },
+    { name: 'HTML/CSS' },
+    { name: 'UI/UX Design' },
+    { name: 'Database Design' }
   ];
 
   const projects = [
@@ -142,7 +141,6 @@ const Index = () => {
                   <SkillBar 
                     key={skill.name} 
                     skill={skill.name} 
-                    level={skill.level} 
                     delay={index * 200}
                   />
                 ))}
@@ -153,7 +151,6 @@ const Index = () => {
                   <SkillBar 
                     key={skill.name} 
                     skill={skill.name} 
-                    level={skill.level} 
                     delay={(index + 4) * 200}
                   />
                 ))}
