@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Code, Database, Globe, Cpu, Mail, Linkedin, Github, Terminal, User, Briefcase, GraduationCap, FolderOpen } from 'lucide-react';
 import AnimatedWindow from '../components/AnimatedWindow';
@@ -248,7 +249,14 @@ const Index = () => {
               <p className="text-foreground mb-8 font-mono">
                 Let's connect and discuss opportunities in technology and development.
               </p>
-              <div className="flex justify-center space-x-6">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a 
+                  href="mailto:turki.krs@hotmail.com"
+                  className="flex items-center space-x-2 bg-secondary text-foreground px-6 py-3 rounded-lg hover:bg-secondary/80 transition-colors duration-300 font-mono border border-primary/30 hover:border-primary/60"
+                >
+                  <Mail className="w-5 h-5" />
+                  <span>turki.krs@hotmail.com</span>
+                </a>
                 <a 
                   href="https://www.linkedin.com/in/turki-al-kreedees-aab85325b"
                   target="_blank"
